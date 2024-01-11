@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E7EBEB;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    bottom: 5em;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display:block;
+    font-size: 1em;
+    text-align: center;
+    color: #C69D04;
+    padding:1em 1em;
+    text-decoration: none;
+    background: black;
+    font-family:Arial;
+}
+
+li a:hover{
+    background-color:#C69D04;
+    color: black;
+}
+
+h1{
+    margin: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #C69D04;
+    font-size: 2em;
+}
+
+.contenido{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 55em;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.mostrador .fila .item{
+    background: white;
+    max-width: 10.5em;
+    padding: 1.5em;
+    height: 28em;
+    text-align: center;
+    margin: 0 .5em;
+    cursor: pointer;
+    border-radius: .25em;
+    transition: .3s;
+}
+
+.mostrador .fila .item:hover{
+    background-color: #C69D04;
+}
+
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.mostrador .fila .item .prducto{
+    font-size: 1em;
+}
+
+.mostrador .fila .item .descripcion{
+    color: #464d4d;
+    font-weight: bold;
+}
+
+.mostrador .fila .item .precio{
+    color: rgb(43, 43, 112);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
+

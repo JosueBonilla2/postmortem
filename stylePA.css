@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E7EBEB;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    max-width: 45em;
+    margin: auto;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+.menu_horizontal li a{
+    display: block;
+    padding: .75em 1em;
+    background-color: #000000;
+    color:#C69D04;
+    text-decoration: none;
+}
+
+.menu_horizontal li a:hover{
+    background-color:#C69D04;
+    color: #000000;
+}
+
+.menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: black;
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+
+.menu_vertical li:hover{
+    background-color: #C69D04;
+    color: #000000;
+}
+
+.menu_vertical li a{
+    display: block;
+    color: #C69D04;
+    padding: .75em .75em .75em 1em;
+    text-decoration: none;
+}
+
+h1{
+    margin-top: 3.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #C69D04;
+    font-size: 2em;
+}
+
+.contenido{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 55em;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.mostrador .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.mostrador .fila .item{
+    background: white;
+    max-width: 10.5em;
+    padding: 1.5em;
+    height: 28em;
+    text-align: center;
+    margin: 0 .5em;
+    cursor: pointer;
+    border-radius: .25em;
+    transition: .3s;
+}
+
+.mostrador .fila .item:hover{
+    background-color: #C69D04;
+}
+
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.mostrador .fila .item .prducto{
+    font-size: 1em;
+}
+
+.mostrador .fila .item .descripcion{
+    color: #464d4d;
+    font-weight: bold;
+}
+
+.mostrador .fila .item .precio{
+    color: rgb(43, 43, 112);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
